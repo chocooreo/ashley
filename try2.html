@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>signup.html</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="try.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <form name="signup" action="signedup.html" method="GET">
+            <div class="title">
+                <h1>Sign Up</h1>
+            </div>
+            
+            <div class="textbox">
+                <span><p>First Name:</p></span><br>
+                <span><input type="text" name="firstname" required placeholder="E.g. Nolan"></span><br>
+            </div>
+
+            <div class="textbox">
+                <span><p>Last Name:</p></span><br>
+                <span><input type="text" name="lastname" required placeholder="E.g. John"></span><br>
+            </div>
+
+            <div class="textbox">
+                <span><p>Password:</p></span><br>
+                <span><input type="password" name="password" required></span><br>
+            </div>
+
+            <div class="radio">
+                <span><p>Gender:</p></span><br>
+                <span>
+                    <input type="radio" name="gender" value="M" id="M" required>
+                    <label for="M">Male</label>
+                    <input type="radio" name="gender" value="F" id="F" required>
+                    <label for="F">Female</label>
+                </span><br>
+            </div>
+
+            <div class="textbox">
+                <span><p>Confirm Password:</p></span><br>
+                <span><input type="password" name="confirmpassword" required></span><br>
+            </div>
+
+            <div class="dropdown">
+                <span><p>Region:</p></span><br>
+                <span>
+                    <select name="region">
+                        <option>North</option>
+                        <option>South</option>
+                        <option>East</option>
+                        <option>West</option>
+                        <option>Cendival</option>
+                    </select>
+                </span><br>
+            </div>
+
+            <div class="checkbox">
+                <span><p>Interests:</p></span><br>
+                <span>
+                    <span>
+                        <input type="checkbox" name="checkbox" value="sports" id="sports">
+                        <label for="sports"><p>Sports</p></label>
+                        <input type="checkbox" name="checkbox" value="music" id="music">
+                        <label for="music"><p>Music</p></label>
+                        <input type="checkbox" name="checkbox" value="movies" id="movies">
+                        <label for="movies"><p>Movies</p></label>
+                    </span>
+                    <br>
+                    <span>
+                        <input type="checkbox" name="checkbox" value="food" id="food">
+                        <label for="food"><p>Food</p></label>
+                        <input type="checkbox" name="checkbox" value="travel" id="travel">
+                        <label for="travel"><p>Travel</p></label>
+                        <input type="checkbox" name="checkbox" value="adventure" id="adventure">
+                        <label for="adventure"><p>Adventure</p></label>
+                    </span>
+                </span><br>
+            </div>
+
+            <div class="textarea">
+                <span><p>Comments:</p></span><br>
+                <span><textarea name="comments" rows="10" cols="30"></textarea></span><br>
+                <style>
+                    textarea {
+                        overflow-y: scroll;
+                        height: 60px;
+                        resize: none;
+                    }
+                </style>
+            </div>
+
+            <div class="submit">
+                <span><input type="submit" name="register"></span><br>
+                <span><input type="reset" name="reset"></span><br>
+            </div>
+        </form>
+    </body>
+</html>
